@@ -78,6 +78,7 @@ const createToDo = async (dispatch: Dispatch<Action>, currentToDo) => {
     id: nanoid(),
     name: currentToDo,
     createdAt: `${Date.now()}`,
+    updatedAt: `${Date.now()}`,
     completed: false,
     todoTodoListId: 'global',
     userId: MY_ID,
